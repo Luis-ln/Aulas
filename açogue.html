@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açougue Carnes de Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para a animação das imagens */
+        .meat-image {
+            transition: transform 0.3s ease; /* Transição suave para a transformação */
+        }
+
+        .meat-image:hover {
+            transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="https://th.bing.com/th?id=OIP.aWP8r5CiciKeyDHHVW9QSQHaHI&w=254&h=245&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Swift Logo" class="logo">
+                <div class="logo-space">
+                    <h4>Carnes de Qualidade</h4>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#menu-carnes">Menu de Carnes</a></li>
+                <li><a href="#ofertas-do-dia">Ofertas do Dia</a></li>
+                <li><a href="#churrasco-vegano">Opções veganas</a></li>
+                <li><a href="#mapa-acougue">Localização</a></li> 
+                <li><a href="#carrinho">Carrinho</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção do Menu de Carnes -->
+        <section id="menu-carnes">
+            <h1>Menu de Carnes</h1>
+            <div class="meat-categories">
+                <div class="meat-category">
+                    <h2>Carne Bovina</h2>
+                    <ul>
+                        <li>Picanha</li>
+                        <li>Contra-filé</li>
+                        <li>Costela</li>
+                        <li>Filé Mignon</li>
+                    </ul>
+                </div>
+                <div class="meat-category">
+                    <h2>Carne Suína</h2>
+                    <ul>
+                        <li>Lombo</li>
+                        <li>Costelinha</li>
+                        <li>Pernil</li>
+                        <li>Linguiça</li>
+                    </ul>
+                </div>
+                <div class="meat-category">
+                    <h2>Aves</h2>
+                    <ul>
+                        <li>Peito de Frango</li>
+                        <li>Coxa e Sobrecoxa</li>
+                        <li>Asa de Frango</li>
+                        <li>Peru</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="meat-details" class="meat-details"></div>
+        </section>
+
+        <!-- Seção de Ofertas do Dia -->
+        <section id="ofertas-do-dia">
+            <h2>Ofertas do Dia</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://th.bing.com/th/id/OIP.Uzo7eag644taf-GTfTBDzgHaHa?w=198&h=198&c=7&r=0&o=5&pid=1.7" alt="Picanha" class="meat-image">
+                    <h3>Picanha</h3>
+                    <p>R$ 59,90/kg</p>
+                    <span class="discount">10% OFF</span>
+                </div>
+                <div class="offer-card">
+                    <img src="https://porkangus.com.br/wp-content/uploads/2022/12/linguica-toscana-600g-pork-angus.jpg" alt="Linguiça Toscana" class="meat-image">
+                    <h3>Linguiça Toscana</h3>
+                    <p>R$ 19,90/kg</p>
+                    <span class="discount">15% OFF</span>
+                </div>
+                <div class="offer-card">
+                    <img src="https://th.bing.com/th/id/OIP.LHy6AouSvtkOWALPawnLSwHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7" alt="Coxa e Sobrecoxa" class="meat-image">
+                    <h3>Coxa e Sobrecoxa</h3>
+                    <p>R$ 12,90/kg</p>
+                    <span class="discount">20% OFF</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Churrasco Vegano -->
+        <section id="churrasco-vegano">
+            <h2>Churrasco Vegano</h2>
+            <div class="vegan-bbq-grid">
+                <div class="vegan-bbq-item">
+                    <img src="https://th.bing.com/th/id/OIP.IHhGF-bz5h4wANeyJ6og7gHaE8?w=250&h=180&c=7&r=0&o=5&pid=1.7" alt="Espetinho de Legumes" class="meat-image">
+                    <h3>Espetinho de Legumes</h3>
+                    <p>Deliciosa combinação de legumes grelhados</p>
+                    <span class="price">R$ 9,90/unidade</span>
+                </div>
+                <div class="vegan-bbq-item">
+                    <img src="https://th.bing.com/th/id/OIP.zMPkswV2ALhj4tsM4lCv4gHaE8?w=243&h=180&c=7&r=0&o=5&pid=1.7" alt="Hambúrguer de Grão-de-Bico" class="meat-image">
+                    <h3>Hambúrguer de Grão-de-Bico</h3>
+                    <p>Saboroso e nutritivo, perfeito para seu churrasco</p>
+                    <span class="price">R$ 12,90/unidade</span>
+                </div>
+                <div class="vegan-bbq-item">
+                    <img src="https://th.bing.com/th/id/OIP.n_k-n0hXoEok_uGabbbE3wHaD4?w=345&h=181&c=7&r=0&o=5&pid=1.7" alt="Seitan Grelhado" class="meat-image">
+                    <h3>Seitan Grelhado</h3>
+                    <p>Alternativa vegana rica em proteínas</p>
+                    <span class="price">R$ 15,90/100g</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Localização do Açougue -->
+        <section id="mapa-acougue">
+            <h2>Localização do Açougue</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13815.607590610847!2d-51.242529687453455!3d-30.039672199999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978f80b1ab1b1%3A0x94e05e21dbd6a0a6!2sMercado%20e%20A%C3%A7ougue%20Econ%C3%B4mico!5e0!3m2!1spt-BR!2sbr!4v1733170627527!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Seção do Carrinho de Compras -->
+        <section id="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <div id="carrinho-itens"></div>
+            <div id="carrinho-total">
+                <strong>Total: R$ <span id="total-preco">0.00</span></strong>
+            </div>
+            <button id="finalizar-compra">Finalizar Compra             </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Açougue Carnes de Qualidade. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="logica.js"></script> <!-- Link para o seu arquivo JavaScript, se necessário -->
+</body>
+</html>
